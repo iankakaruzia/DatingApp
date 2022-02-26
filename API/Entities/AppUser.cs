@@ -17,6 +17,10 @@ public class AppUser
     public string City { get; set; }
     public string Country { get; set; }
     public ICollection<Photo> Photos { get; set; }
+
     public ICollection<UserLike> LikedByUsers { get; set; }
     public ICollection<UserLike> LikedUsers { get; set; }
+
+    public ICollection<Message> MessagesSent { get; set; }
+    public ICollection<Message> MessagesReceived { get; set; }
 }
